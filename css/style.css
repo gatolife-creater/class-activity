@@ -201,6 +201,26 @@ footer {
     flex-shrink: 0;
 }
 
+.editor {
+    /* display: block  ; */
+    width: 600px;
+    margin: 0 auto;
+}
+
+.editor-top {
+    height: 30px;
+    background-color: gray;
+    color: white;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.editor-main {
+    padding-top: 10px !important;
+    margin-top: 0;
+    font-size: 15px;
+}
+
 
 /* a:hover .mouse-stalker>div {
     width: 50px;
