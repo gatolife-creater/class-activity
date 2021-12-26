@@ -1,7 +1,8 @@
 let url;
 let nav;
 
-window.onload = function() {
+window.addEventListener("load", function() {
+    createTabs();
     setTextbookLinks();
     url = location.href;
     nav = document.getElementsByClassName("nav-link");
@@ -11,6 +12,6 @@ window.onload = function() {
         }
     }
 
-}
+});
 
 // });
