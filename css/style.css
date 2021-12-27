@@ -258,6 +258,35 @@ footer {
     height: 50px;
 } */
 
+
+/* ページTOPに戻る */
+
+.page-top {
+    display: none;
+    /* display: inline; */
+    position: fixed;
+    right: 25px;
+    bottom: 75px;
+    /* background: #7db4e6; */
+}
+
+.page-top a {
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: black;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.page-top a svg {
+    font-size: 32px;
+    color: #fff;
+    line-height: 32px;
+}
+
 ::selection {
     background: #009e8f;
     color: rgb(255, 255, 255);
