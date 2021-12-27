@@ -22,9 +22,16 @@ function setTextbookLinks() {
             for (let tablink = 0; tablink < tablinks.length; tablink++) {
                 let temp = tablink + 1;
                 tablinks[tablink].href = `${temp}.html`;
+                // tablinks[tablink].className = "auto-generated-href unselectable";
             }
         }
+    }
 
+    let tabs = document.getElementsByClassName("nav-link");
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.add("unselectable");
     }
 
 }
+
+export { setTextbookLinks };

@@ -1,9 +1,6 @@
-let url;
-let nav;
-
-window.addEventListener("load", function() {
-    createTabs();
-    setTextbookLinks();
+export function whereAmI() {
+    let url;
+    let nav;
     url = location.href;
     nav = document.getElementsByClassName("nav-link");
     for (let i = 0; i < nav.length; i++) {
@@ -11,7 +8,6 @@ window.addEventListener("load", function() {
             nav[i].setAttribute("class", "nav-link active");
         }
     }
-
-});
+}
 
 // });

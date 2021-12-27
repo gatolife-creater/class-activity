@@ -60,3 +60,5 @@ function halfWidthToFullWidth(src) {
         return String.fromCharCode(s.charCodeAt(0) + 0xFEE0);
     });
 }
+
+export { createTabs };

@@ -8,28 +8,61 @@
     background-color: black;
     top: 0;
     right: 0;
-    width: 90%;
+    width: calc(100% - 200px);
     z-index: -1;
+}
+
+.textbook-header {
+    display: block;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 220px;
+    z-index: -1;
+}
+
+.textbook-header-wrapper {
+    display: table;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: white;
+}
+
+.lang-img {
+    display: table-cell;
+    width: 200px;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.lang-description {
+    display: table-cell;
+    width: 250px;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .main-article-wrapper {
     background-color: white;
     width: 100%;
-    /* margin-left: 120px; */
     padding-top: 100px;
     margin-top: 400px;
-    /* background-color: gray; */
-    /* z-index: 10; */
 }
 
 .main-article {
-    display: block;
     width: 85%;
     margin: 0 auto;
 }
 
 .article-section {
     margin-bottom: 100px;
+}
+
+article {
+    line-height: 2.5em;
 }
 
 .divider {
@@ -54,12 +87,10 @@
 
 canvas {
     display: block;
-    /* position: sticky; */
     width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
-    /* z-index: 100000000000000000000000; */
 }
 
 .nav-item {
@@ -226,3 +257,8 @@ footer {
     width: 50px;
     height: 50px;
 } */
+
+::selection {
+    background: #009e8f;
+    color: rgb(255, 255, 255);
+}
