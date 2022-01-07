@@ -1,7 +1,3 @@
-/* * {
-    cursor: none;
-} */
-
 .canvas-window {
     display: block;
     position: fixed;
@@ -49,7 +45,7 @@
     background-color: white;
     width: 100%;
     padding-top: 100px;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 .main-article {
@@ -192,6 +188,15 @@ details[open] .detail-content9 {
     user-select: none;
 }
 
+iframe,
+img,
+canvas {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 
 /* Chrome、Safari以外 */
 
@@ -235,7 +240,7 @@ footer {
 .editor {
     /* display: block  ; */
     width: 600px;
-    margin: 0 auto;
+    background-color: #333;
 }
 
 .editor-top {
@@ -247,47 +252,25 @@ footer {
 }
 
 .editor-main {
+    /* display: inline-block; */
+    width: 95%;
     padding-top: 10px !important;
-    margin-top: 0;
+    margin: 0;
     font-size: 15px;
-}
-
-
-/* a:hover .mouse-stalker>div {
-    width: 50px;
-    height: 50px;
-} */
-
-
-/* ページTOPに戻る */
-
-.page-top {
-    display: none;
-    /* display: inline; */
-    position: fixed;
-    right: 25px;
-    bottom: 75px;
-    /* background: #7db4e6; */
-}
-
-.page-top a {
-    display: block;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    background: black;
-    border-radius: 50%;
-    line-height: 50px;
-}
-
-.page-top a svg {
-    font-size: 32px;
-    color: #fff;
-    line-height: 32px;
+    line-height: 20px;
+    float: right;
 }
 
 ::selection {
     background: #009e8f;
     color: rgb(255, 255, 255);
+}
+
+.clearfix:after {
+    content: "";
+    /* 擬似要素を実体化 */
+    clear: both;
+    /* floatを解除する */
+    display: block;
+    /* ブロック要素にする */
 }

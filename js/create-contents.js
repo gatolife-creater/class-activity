@@ -1,10 +1,10 @@
 function createTabs() {
     let pages = {
-        javascript: 8,
-        python: 6,
-        cs: 3,
-        html: 3,
-        css: 3
+        javascript: 2,
+        python: 0,
+        cs: 0,
+        html: 0,
+        css: 0
     };
 
     let langs = "javascript,python,cs,html,css".split(",");
@@ -46,9 +46,9 @@ function createTabs() {
         let tab_panel = document.getElementsByClassName("nav-pills")[0];
         let newTab = document.createElement("li");
         newTab.setAttribute("class", "nav-item");
-        newTab.innerHTML = `<a href="#" class="nav-link text-white auto-generated-href">
-        &ensp;第${halfWidthToFullWidth(count+1+"")}回
-    </a>`;
+        newTab.innerHTML = `<a href="#" class="nav-link text-white auto-generated-href unselectable">
+            &ensp;第${halfWidthToFullWidth(count+1+"")}回
+        </a>`;
         tab_panel.appendChild(newTab);
     }
 }

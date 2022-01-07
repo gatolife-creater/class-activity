@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/sunburst.css">
     <script src="../../js/date.js"></script>
-    <script src="../../css/style.css"></script>
     <script type="module" src="../../js/main.js"></script>
     <link href="../../css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/carousel.css">
@@ -41,7 +40,23 @@
 </head>
 
 <body>
-
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <aside class="sidebar">
             <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 200px;height: 100%;font-size: 17px;">
@@ -69,10 +84,41 @@
 
 
             <div class="main-article">
+                <div class="article-section">
 
-                <div class="editor">
-                    <div class="editor-top">javascript</div>
-                    <pre class="editor-main prettyprint lang-js linenums:1">
+                    <h2>第２回：ブロックを設置しよう</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>初めてのプログラミングは、ブロックを設置するところから始まります。
+                            <br>この作業にはプログラミングの基礎がぎっしりと詰まっていますから、じっくり理解しながら取り組みましょう。
+                            <br>今回やることは次の通りです。
+                            <br>
+                            <br>
+                            <ul>
+                                <li>ブロックの設置の仕方を学ぼう</li>
+                                <li>変数を使ってブロックを設置してみよう</li>
+                                <li>配列の仕組みを理解しよう</li>
+                                <li>配列を使ってブロックを複数設置してみよう</li>
+                                <li>二次元配列でブロックを設置する</li>
+                            </ul>
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+
+                <div class="article-section">
+
+                    <h2>ブロックの設置の仕方を学ぼう</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>まずブロックの設置の仕方をご紹介します。
+                            <br>この方法は、<strong>p5.jsを使用しないとできません</strong>のでご注意ください。
+                            <br>では以下と同じ様にプログラムを書いてください。
+                            <br>
+                            <br>
+                            <div class="editor clearfix">
+                                <div class="editor-top">sketch.js</div>
+                                <pre class="editor-main prettyprint lang-js">
 function setup(){
     createCanvas(600,400);
 }
@@ -82,8 +128,68 @@ function draw(){
     fill(255);
     rect(0,0,100,100);
 }
-                    </pre>
+                                </pre>
+
+                                <!-- <div style="clear:both"></div> -->
+                            </div>
+                            <br>
+                            <br>書けましたでしょうか。それでは第１回と同様に、「ブロック崩し」フォルダから「index.html」をダブルクリックしてみましょう。
+                            <br>下の画像の様な画面は表示されましたか？
+                            <br>
+                            <br><img src="img/ブロックの設置の仕方を学ぼう.jpeg" alt="" width="500px" style="border: 2px solid black;border-radius:10px;">
+                            <br>
+                            <br>もしそうでなかった場合には、打ち間違えが発生しているかもしれません。上のプログラムをコピペして、ブラウザの再読み込みをしてみましょう。
+                            <br>ブロックを描画するにあたり、描画するための「カンバス」や「画用紙」の様なものが必要です。
+                            <br>それを "createCanvas()" で作り出しています。また、()内の数字はその大きさを表しています。
+                            <br>,(カンマ)の左側が横幅、右側が縦幅を表します。つまり、横幅が600で縦幅が400ということです。
+
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
                 </div>
+
+                <div class="article-section">
+
+                    <h2>変数を使ってブロックを設置してみよう</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+                <div class="article-section">
+
+                    <h2>配列の仕組みを理解しよう</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+                <div class="article-section">
+
+                    <h2>配列を使ってブロックを複数設置してみよう</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+                <div class="article-section">
+
+                    <h2>二次元配列でブロックを設置する</h2>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <article>
+                        </article>
+                        <hr class="featurette-divider">
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -93,7 +199,7 @@ function draw(){
 
                 <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-                    <img src="../img/KU_LOGO.png" width="40" alt="" style="filter:invert(100%)">
+                    <img src="../../img/KU_LOGO.png" width="40" alt="" style="filter:invert(100%)">
                 </a>
 
                 <ul class="nav col-md-4 justify-content-end">
@@ -113,37 +219,3 @@ function draw(){
 </div> -->
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/sunburst.css">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <div class="editor">
-        <div class="editor-top">javascript</div>
-        <pre class="editor-main prettyprint lang-js linenums:1">
-function setup(){
-    createCanvas(600,400);
-}
-function draw(){
-    background(0);
-    fill(255);
-    rect(0,0,100,100);
-}
-        </pre>
-    </div>
-
-
-</body>
-
-</html> -->
