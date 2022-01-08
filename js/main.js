@@ -29,7 +29,7 @@ function changePath() {
         for (let i = 0; i < scripts.length; i++) {
             if (scripts[i].src.includes("sketch.js")) {
                 console.log(scripts[i].src);
-                scripts[i].src = scripts[i].src.replace("/js/sketch.js", "/class-activity/sketch.js");
+                scripts[i].src = scripts[i].src.replace("/js/sketch.js", "/class-activity/js/sketch.js");
                 console.log(scripts[i].src);
             }
         }
