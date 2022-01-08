@@ -8,8 +8,6 @@ function setTextbookLinks() {
                 .children[1]
                 .children;
             for (let chapter = 0; chapter < txtlinks.length; chapter++) {
-                // console.log(txtlinks[chapter], +chapter + 1);
-                // console.log("text", txtlinks[chapter]);
                 let temp = chapter + 1;
                 txtlinks[chapter].href = `textbooks/${langs[i]}/${temp}.html`;
             }

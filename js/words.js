@@ -121,10 +121,7 @@ let words = `関数,
              ユーザースクリプト
              `;
 words = words.replace(/\s/g, "").split(","); // 全ての空白を削除（改行も含めて）
-
 let articles = document.getElementsByTagName("article");
-
-
 
 function detectJargon() {
     for (let i = 0; i < articles.length; i++) {

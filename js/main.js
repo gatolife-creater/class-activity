@@ -3,23 +3,15 @@ import { setTextbookLinks } from "./textbook-link.js";
 import { whereAmI } from "./where-am-i.js";
 import { detectJargon } from "./words.js"
 
-// import { createPageTop, displayPageTop } from "./page_top.js"
-
 window.addEventListener("load", function() {
     createTabs();
     setTextbookLinks();
     whereAmI();
     setLang();
     detectJargon();
-    // createPageTop();
 });
 
-window.addEventListener('scroll', function() {
-    // let distance = window.scrollY;
-    // displayPageTop(distance);
-    // log();
-
-});
+window.addEventListener('scroll', function() {});
 document.onselectionchange = function() {
     let text = document.getSelection().toString();
     console.log(text);
