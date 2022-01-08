@@ -264,6 +264,10 @@ jargon {
     border-bottom: 1px gray dashed;
 }
 
+jargon:hover {
+    border-bottom: 2px gray dotted;
+}
+
 jargon a {
     color: black;
     text-decoration: none;
