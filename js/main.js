@@ -28,7 +28,10 @@ function changePath() {
         let scripts = document.getElementsByTagName("script");
         for (let i = 0; i < scripts.length; i++) {
             if (scripts[i].src.includes("sketch.js")) {
-                scripts[i] = "<script src='/class-activity/js/sketch.js'></script>";
+                scripts[i].remove();
+                let alt_sketch = document.createElement("script");
+                alt_sketch.src = "/class-activity/js/sketch.js";
+                document.body.insertBefore(alt_sketch, document.body.firstChild);
             }
         }
     }
