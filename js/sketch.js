@@ -65,7 +65,7 @@ class Light {
             this.circle_x.push(mouseX);
             this.circle_y.push(mouseY);
             this.circle_size.push(50);
-            this.circle_speed.push(3);
+            this.circle_speed.push(4);
         }
     }
 
