@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
     whereAmI();
     setLang();
     detectJargon();
+    changePath();
 });
 
 window.addEventListener('scroll', function() {});
@@ -20,6 +21,19 @@ function setLang() {
     let lang = document.getElementsByTagName("html")[0].lang;
     lang = "jp";
     console.log(lang);
+}
+
+function changePath() {
+    if (window.location.href.includes("htt")) {
+        let scripts = document.getElementsByTagName("script");
+        for (let i = 0; i < scripts.length; i++) {
+            if (scripts[i].src.includes("sketch.js")) {
+                console.log(scripts[i].src);
+                scripts[i].src = scripts[i].src.replace("/js/sketch.js", "/class-activity/sketch.js");
+                console.log(scripts[i].src);
+            }
+        }
+    }
 }
 
 let ku = ` ■■    ■                                                       
