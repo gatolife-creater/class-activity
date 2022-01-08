@@ -28,9 +28,7 @@ function changePath() {
         let scripts = document.getElementsByTagName("script");
         for (let i = 0; i < scripts.length; i++) {
             if (scripts[i].src.includes("sketch.js")) {
-                console.log(scripts[i].src);
-                scripts[i].src = scripts[i].src.replace("/js/sketch.js", "/class-activity/js/sketch.js");
-                console.log(scripts[i].src);
+                scripts[i] = "<script src='/class-activity/js/sketch.js'></script>";
             }
         }
     }
