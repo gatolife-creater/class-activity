@@ -1,12 +1,12 @@
-function createTabs() {
-    let pages = {
-        javascript: 2,
-        python: 0,
-        cs: 0,
-        html: 0,
-        css: 0
-    };
+let pages = {
+    javascript: 2,
+    python: 0,
+    cs: 0,
+    html: 0,
+    css: 0
+};
 
+function createTabs() {
     let langs = "javascript,python,cs,html,css".split(",");
 
     for (let i = 0; i < langs.length; i++) {
@@ -61,4 +61,4 @@ function halfWidthToFullWidth(src) {
     });
 }
 
-export { createTabs };
+export { createTabs, pages };

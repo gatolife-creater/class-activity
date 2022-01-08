@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/date.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
     <script type="module" src="js/main.js"></script>
     <link href="css/sidebars.css" rel="stylesheet">
     <link rel="stylesheet" href="css/carousel.css">
@@ -32,12 +32,9 @@
 </head>
 
 <body>
+    <script src="/js/sketch.js"></script>
     <header class="canvas-window">
-        <iframe src="canvas.html" width="100%;" height="250px" frameborder="0"></iframe>
     </header>
-    <!-- <script async src="https://cse.google.com/cse.js?cx=2e6e9594cef7943d2"></script>
-    <div class="gcse-search"></div> -->
-
     <main>
         <aside class="sidebar">
             <!-- 下に.bg-darkがあった -->
@@ -108,7 +105,7 @@
                             <h2>基礎編</h2>
                             <p>プログラミングの基礎的な考え方を学習します。プログラミングを始めたばかりの人にオススメです。
                             </p>
-                            <p><a class="btn btn-secondary" href="textbooks/beginner/1.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/beginner/1.html">学習する &raquo;</a></p>
                         </div>
                         <div class="col-4">
                             <img class="bd-placeholder-img" src="img/BEGINNER.jpeg" width="140" alt="">
@@ -117,7 +114,7 @@
                                 <br>
                                 <br>
                             </p>
-                            <p><a class="btn btn-secondary" href="textbooks/beginner/2.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/beginner/2.html">学習する &raquo;</a></p>
                         </div>
                         <hr class="featurette-divider">
 
@@ -142,14 +139,14 @@
                                 <br>
                                 <br>
                             </p>
-                            <p><a class="btn btn-secondary" href="textbooks/python/index.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/python/index.html">学習する &raquo;</a></p>
                         </div>
                         <div class="col-4 margin-btm-50">
                             <img class="bd-placeholder-img" src="img/CS_LOGO.png" width="140" alt="">
                             <h2>C#</h2>
                             <p>ネイティブアプリの開発から、ゲームの開発まで幅広く使われているプログラミング言語です。</p>
                             <br>
-                            <p><a class="btn btn-secondary" href="textbooks/cs/index.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/cs/index.html">学習する &raquo;</a></p>
                         </div>
                         <div class="col-4 margin-btm-50 border-right-2">
                             <img class="bd-placeholder-img" src="img/HTML_LOGO.png" width="140" alt="">
@@ -157,7 +154,7 @@
                             <p>サイトの構造を定義するためのマークアップ言語です。ウェブアプリを作るうえでの基礎となります。
                                 <br>
                             </p>
-                            <p><a class="btn btn-secondary" href="textbooks/html/index.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/html/index.html">学習する &raquo;</a></p>
                         </div>
                         <div class="col-4">
                             <img class="bd-placeholder-img" src="img/CSS_LOGO.png" width="140" alt="">
@@ -165,7 +162,7 @@
                             <p>サイトのスタイルを整えるためのスタイルシート言語です。ウェブアプリを作るうえでの基礎となります。
                                 <br>
                             </p>
-                            <p><a class="btn btn-secondary" href="textbooks/css/index.html">学習する &raquo;</a></p>
+                            <p><a class="btn btn-secondary disabled" href="textbooks/css/index.html">学習する &raquo;</a></p>
                         </div>
                         <hr class="featurette-divider">
 

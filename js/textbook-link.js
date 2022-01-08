@@ -29,7 +29,8 @@ function setTextbookLinks() {
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].classList.add("unselectable");
     }
-
 }
+
+
 
 export { setTextbookLinks };
