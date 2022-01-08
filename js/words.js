@@ -119,4 +119,23 @@ let words = `関数,
              パンくずリスト,
              拡張機能,
              ユーザースクリプト
-             `.split(",");
+             `;
+words = words.replace(/\s/g, "").split(","); // 全ての空白を削除（改行も含めて）
+
+let articles = document.getElementsByTagName("article");
+
+
+
+function detectJargon() {
+    for (let i = 0; i < articles.length; i++) {
+        for (let word = 0; word < words.length; word++) {
+            if (articles[i].textContent.includes(words[word])) {
+                let original_text = new RegExp(String.raw `${words[word]}`, "g");
+                let modified_text = `<jargon><a href=https://e-words.jp/?q=${words[word]} target="_blank">${words[word]}</a></jargon>`;
+                articles[i].innerHTML = articles[i].innerHTML.replace(original_text, modified_text);
+            }
+        }
+    }
+}
+
+export { detectJargon };

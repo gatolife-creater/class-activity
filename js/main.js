@@ -1,6 +1,7 @@
 import { createTabs } from "./create-contents.js";
 import { setTextbookLinks } from "./textbook-link.js";
 import { whereAmI } from "./where-am-i.js";
+import { detectJargon } from "./words.js"
 
 // import { createPageTop, displayPageTop } from "./page_top.js"
 
@@ -9,6 +10,7 @@ window.addEventListener("load", function() {
     setTextbookLinks();
     whereAmI();
     setLang();
+    detectJargon();
     // createPageTop();
 });
 

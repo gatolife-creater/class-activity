@@ -261,6 +261,23 @@ footer {
     float: right;
 }
 
+jargon {
+    border-bottom: 1px gray dashed;
+}
+
+jargon a {
+    color: black;
+    text-decoration: none;
+}
+
+jargon a:hover {
+    color: gray;
+}
+
+jargon:hover {
+    color: gray;
+}
+
 ::selection {
     background: #009e8f;
     color: rgb(255, 255, 255);
