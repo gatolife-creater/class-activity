@@ -128,7 +128,9 @@ function detectJargon() {
         for (let word = 0; word < words.length; word++) {
             if (articles[i].textContent.includes(words[word])) {
                 let original_text = new RegExp(String.raw `${words[word]}`, "g");
-                let modified_text = `<jargon><a href=https://e-words.jp/?q=${words[word]} target="_blank">${words[word]}</a></jargon>`;
+                let modified_text = `<jargon>
+                                        <a href=https://e-words.jp/?q=${words[word]} target="_blank">${words[word]}</a>
+                                     </jargon>`;
                 articles[i].innerHTML = articles[i].innerHTML.replace(original_text, modified_text);
             }
         }
