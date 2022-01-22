@@ -128,8 +128,6 @@ function draw(){
     rect(0,0,100,100);
 }
                                 </pre>
-
-                                <!-- <div style="clear:both"></div> -->
                             </div>
                             <br>
                             <br>書けましたでしょうか。それでは第１回と同様に、「ブロック崩し」フォルダから「index.html」をダブルクリックしてみましょう。
@@ -141,13 +139,19 @@ function draw(){
                             <br>
                             <br>では解説いたします。
                             <br>ブロックを描画するにあたり、描画するための「カンバス」や「画用紙」の様なものが必要です。
-                            <br>それを "createCanvas()" で作り出しています。また、()内の数字はその大きさを表しています。
-                            <br>,(カンマ)の左側が横幅、右側が縦幅を表します。つまり、横幅が600で縦幅が400ということです。
-                            <br>また、()内に記述される値のことを<strong>引数</strong>といいます。
-                            <br>600の様に一番目に記述される引数のことを<strong>第一引数</strong>,400の様に二番目に記述される引数のことを<strong>第二引数</strong>と言います。
+                            <br>それを "createCanvas( )" で作り出しています。また、( )内の数字はその大きさを表しています。
+                            <br>カンマ（ , ）の左側が横幅、右側が縦幅を表します。つまり、横幅が600で縦幅が400ということです。
+                            <br>また、( )内に記述される値のことを<strong>引数</strong>といいます。
+                            <br>600の様に一番目に記述される引数のことを<strong>第一引数</strong>、400の様に二番目に記述される引数のことを<strong>第二引数</strong>と言います。
                             <br>これらは関数を勉強するときに詳しく取り上げます。
                             <br>
-                            <br>次にrect();
+                            <br>次にrect( )。　これは四角形を描くものです。引数は左から順番に X座標, Y座標, 横幅, 縦幅 です。
+                            <br>
+                            <br>最後に、P5.jsを使うにあたり最も大切な「function setup( ){ }」と「function draw( ){ }」を解説します。
+                            <br>まず、function setup( ){ } の{ }内(中カッコ内)に記述されているプログラムが<strong>最初に一回だけ</strong>実行されます。
+                            <br>次に、function draw( ){ }の{ }内に記述されているプログラムが<strong>常に実行</strong>されます。
+                            <br>
+                            <br>これらを頭の方隅において、次の章に進みましょう。
 
                         </article>
                         <hr class="featurette-divider">
@@ -159,7 +163,23 @@ function draw(){
                     <h2>変数を使ってブロックを設置してみよう</h2>
                     <hr class="featurette-divider">
                     <div class="row">
-                        <article>
+                        <article>ここからは、変数を使ってブロックを設置してみましょう。
+                            <br>そもそも変数とは何でしょうか。これは、値を保存しておく<strong>箱</strong>のようなもので、
+                            <br>その箱に名前をつけることで、その名前が値の代わりになります。
+                            <br>
+                            <br>
+                            <div class="editor clearfix">
+                                <div class="editor-top">sketch.js</div>
+                                <pre class="editor-main prettyprint lang-js">
+let school = "神大附属";
+
+let grade = 2;
+
+console.log(school, grade);
+                                </pre>
+                            </div>
+                            <br>上のプログラムを <strong>function draw( ){ }</strong>の外に書いてみましょう。
+                            <br>これは変数<strong>school</strong>に<strong>「神大附属」</strong>という<strong>文字列</strong>を
                         </article>
                         <hr class="featurette-divider">
                     </div>
@@ -186,7 +206,7 @@ function draw(){
                 </div>
                 <div class="article-section">
 
-                    <h2>二次元配列でブロックを設置する</h2>
+                    <h2>二次元配列でブロックを設置してみよう</h2>
                     <hr class="featurette-divider">
                     <div class="row">
                         <article>

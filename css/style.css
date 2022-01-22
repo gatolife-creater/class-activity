@@ -265,7 +265,7 @@ jargon {
 }
 
 jargon:hover {
-    border-bottom: 2px gray dotted;
+    border-bottom: 1px gray dotted;
 }
 
 jargon a {
@@ -279,6 +279,12 @@ jargon a:hover {
 
 jargon:hover {
     color: gray;
+}
+
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 200px;
 }
 
 textarea {
