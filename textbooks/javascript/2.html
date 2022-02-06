@@ -88,18 +88,22 @@
                     <h2>第２回：ブロックを設置しよう</h2>
                     <hr class="featurette-divider">
                     <div class="row">
-                        <article>初めてのプログラミングは、ブロックを設置するところから始まります。
-                            <br>この作業にはプログラミングの基礎がぎっしりと詰まっていますから、じっくり理解しながら取り組みましょう。
-                            <br>今回やることは次の通りです。
-                            <br>
-                            <br>
-                            <ul>
-                                <li>ブロックの設置の仕方を学ぼう</li>
-                                <li>変数を使ってブロックを設置してみよう</li>
-                                <li>配列の仕組みを理解しよう</li>
-                                <li>配列を使ってブロックを複数設置してみよう</li>
-                                <li>二次元配列でブロックを設置する</li>
-                            </ul>
+                        <article>
+                            <sentence>
+                                <br>初めてのプログラミングは、ブロックを設置するところから始まります。
+                                <br>この作業にはプログラミングの基礎がぎっしりと詰まっていますから、じっくり理解しながら取り組みましょう。
+                                <br>今回やることは次の通りです。
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>ブロックの設置の仕方を学ぼう</li>
+                                    <li>変数を使ってブロックを設置してみよう</li>
+                                    <li>配列の仕組みを理解しよう</li>
+                                    <li>配列を使ってブロックを複数設置してみよう</li>
+                                    <li>二次元配列でブロックを設置する</li>
+                                </ul>
+                            </sentence>
+
                         </article>
                         <hr class="featurette-divider">
                     </div>
@@ -110,9 +114,13 @@
                     <h2>ブロックの設置の仕方を学ぼう</h2>
                     <hr class="featurette-divider">
                     <div class="row">
-                        <article>まずブロックの設置の仕方をご紹介します。
-                            <br>この方法は、<strong>p5.jsを使用しないとできません</strong>のでご注意ください。
-                            <br>では以下と同じ様にプログラムを書いてください。
+                        <article>
+                            <sentences>
+                                <br>まずブロックの設置の仕方をご紹介します。
+                                <br>この方法は、<strong>p5.jsを使用しないとできません</strong>のでご注意ください。
+                                <br>では以下と同じ様にプログラムを書いてください。
+                            </sentences>
+
                             <br>
                             <br>
                             <div class="editor clearfix">
@@ -130,29 +138,32 @@ function draw(){
                                 </pre>
                             </div>
                             <br>
-                            <br>書けましたでしょうか。それでは第１回と同様に、「ブロック崩し」フォルダから「index.html」をダブルクリックしてみましょう。
-                            <br>下の画像の様な画面は表示されましたか？
+                            <sentence>
+                                <br>書けましたでしょうか。それでは第１回と同様に、「ブロック崩し」フォルダから「index.html」をダブルクリックしてみましょう。
+                                <br>下の画像の様な画面は表示されましたか？
+                            </sentence>
                             <br>
                             <br><img src="img/ブロックの設置の仕方を学ぼう.jpeg" alt="" width="500px" style="border: 2px solid black;border-radius:10px;">
                             <br>
-                            <br>もしそうでなかった場合には、打ち間違えが発生しているかもしれません。上のプログラムをコピペして、ブラウザの再読み込みをしてみましょう。
-                            <br>
-                            <br>では解説いたします。
-                            <br>ブロックを描画するにあたり、描画するための「カンバス」や「画用紙」の様なものが必要です。
-                            <br>それを "createCanvas( )" で作り出しています。また、( )内の数字はその大きさを表しています。
-                            <br>カンマ（ , ）の左側が横幅、右側が縦幅を表します。つまり、横幅が600で縦幅が400ということです。
-                            <br>また、( )内に記述される値のことを<strong>引数</strong>といいます。
-                            <br>600の様に一番目に記述される引数のことを<strong>第一引数</strong>、400の様に二番目に記述される引数のことを<strong>第二引数</strong>と言います。
-                            <br>これらは関数を勉強するときに詳しく取り上げます。
-                            <br>
-                            <br>次にrect( )。　これは四角形を描くものです。引数は左から順番に X座標, Y座標, 横幅, 縦幅 です。
-                            <br>
-                            <br>最後に、P5.jsを使うにあたり最も大切な「function setup( ){ }」と「function draw( ){ }」を解説します。
-                            <br>まず、function setup( ){ } の{ }内(中カッコ内)に記述されているプログラムが<strong>最初に一回だけ</strong>実行されます。
-                            <br>次に、function draw( ){ }の{ }内に記述されているプログラムが<strong>常に実行</strong>されます。
-                            <br>
-                            <br>これらを頭の方隅において、次の章に進みましょう。
-
+                            <sentence>
+                                <br>もしそうでなかった場合には、打ち間違えが発生しているかもしれません。上のプログラムをコピペして、ブラウザの再読み込みをしてみましょう。
+                                <br>
+                                <br>では解説いたします。
+                                <br>ブロックを描画するにあたり、描画するための「カンバス」や「画用紙」の様なものが必要です。
+                                <br>それを "createCanvas( )" で作り出しています。また、( )内の数字はその大きさを表しています。
+                                <br>カンマ（ , ）の左側が横幅、右側が縦幅を表します。つまり、横幅が600で縦幅が400ということです。
+                                <br>また、( )内に記述される値のことを<strong>引数</strong>といいます。
+                                <br>600の様に一番目に記述される引数のことを<strong>第一引数</strong>、400の様に二番目に記述される引数のことを<strong>第二引数</strong>と言います。
+                                <br>これらは関数を勉強するときに詳しく取り上げます。
+                                <br>
+                                <br>次にrect( )。　これは四角形を描くものです。引数は左から順番に X座標, Y座標, 横幅, 縦幅 です。
+                                <br>
+                                <br>最後に、P5.jsを使うにあたり最も大切な「function setup( ){ }」と「function draw( ){ }」を解説します。
+                                <br>まず、function setup( ){ } の{ }内(中カッコ内)に記述されているプログラムが<strong>最初に一回だけ</strong>実行されます。
+                                <br>次に、function draw( ){ }の{ }内に記述されているプログラムが<strong>常に実行</strong>されます。
+                                <br>
+                                <br>これらを頭の方隅において、次の章に進みましょう。
+                            </sentence>
                         </article>
                         <hr class="featurette-divider">
                     </div>
@@ -163,9 +174,12 @@ function draw(){
                     <h2>変数を使ってブロックを設置してみよう</h2>
                     <hr class="featurette-divider">
                     <div class="row">
-                        <article>ここからは、変数を使ってブロックを設置してみましょう。
-                            <br>そもそも変数とは何でしょうか。これは、値を保存しておく<strong>箱</strong>のようなもので、
-                            <br>その箱に名前をつけることで、その名前が値の代わりになります。
+                        <article>
+                            <sentence>
+                                <br>ここからは、変数を使ってブロックを設置してみましょう。
+                                <br>そもそも変数とは何でしょうか。これは、値を保存しておく<strong>箱</strong>のようなもので、
+                                <br>その箱に名前をつけ値を代入することで、その名前が値の代わりになります。
+                            </sentence>
                             <br>
                             <br>
                             <div class="editor clearfix">
@@ -173,13 +187,51 @@ function draw(){
                                 <pre class="editor-main prettyprint lang-js">
 let school = "神大附属";
 
-let grade = 2;
+console.log(school);
 
-console.log(school, grade);
+//console.log("神代附属"); と結果が一緒
                                 </pre>
                             </div>
-                            <br>上のプログラムを <strong>function draw( ){ }</strong>の外に書いてみましょう。
-                            <br>これは変数<strong>school</strong>に<strong>「神大附属」</strong>という<strong>文字列</strong>を
+
+                            <sentence>
+                                <br>上のプログラムを <strong>function draw( ){ }</strong>の外に書いてみましょう。
+                                <br>これは変数<strong>school</strong>に<strong>"神大附属"</strong>という<strong>文字列</strong>を<strong>代入</strong>しています。
+                                <br>これで変数schoolは "神大附属" として使える様になったわけです。
+                                <br><strong>console.log()</strong>ですが、これはブラウザのコンソールにカッコ内の値を表示させるものです。したがって、コンソールには <strong>神大附属</strong>と表示されるはずです。
+                                <br>ブラウザを開いて右クリック。表示されたオプションの中に「開発者モード」「デベロッパーツール」「Inspect」のいずれかがあったら、それをクリックしてください。
+                                <br>下の画像の様になりましたか？ブラウザの右側にこの画面が出ていれば、コンソールの表示に成功しています。
+                                <br>さらに<strong>神大附属</strong>が出力されていればオッケーです。
+                            </sentence>
+
+                            <br>
+                            <br><img src="img/変数を使ってブロックを設置してみよう1.png" width="500px" alt="適当">
+                            <br>
+
+                            <sentence>
+                                <br>さて、本題に移ります。
+                                <br>先ほど説明した様に、変数は値を保存しておく<strong>箱</strong>の様なもの。
+                                <br>なぜこれが便利なのかを実際に見ていきましょう。
+                            </sentence>
+
+                            <br>
+                            <div class="editor clearfix">
+                                <div class="editor-top">sketch.js</div>
+                                <pre class="editor-main prettyprint lang-js">
+let x=0;
+
+function setup(){
+    createCanvas(600,400);
+}
+
+function draw(){
+    background(0);
+    fill(255);
+    rect(x,0,100,100);
+    rect(x,100,100,100);
+}
+
+                                </pre>
+                            </div>
                         </article>
                         <hr class="featurette-divider">
                     </div>
